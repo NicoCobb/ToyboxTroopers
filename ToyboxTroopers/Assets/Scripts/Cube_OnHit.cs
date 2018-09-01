@@ -7,6 +7,7 @@ public class Cube_OnHit : MonoBehaviour {
     public GameObject[] broken_cubes;
     
     static private int breaking_point = 150;
+	static private float const_slowdown = 0.8f;
 
     private Rigidbody rb;
 	// Use this for initialization
@@ -21,18 +22,34 @@ public class Cube_OnHit : MonoBehaviour {
     
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.impulse.sqrMagnitude / rb.mass > breaking_point && (collision.impulse.y > 0.1f))
+        if (collision.impulse.sqrMagnitude / rb.mass > breaking_point || collision.gameObject.tag == "bullet")
         {
+            Vector3 angle = rb.velocity;
+            if (collision.gameObject.tag == "bullet")
+            {
+                angle += collision.contacts[0].normal;
+                angle /= 2;
+            }
+            else
+                angle = Vector3.one;
+            print(rb.velocity + " " + collision.contacts[0].normal + " " + angle);
+            angle = Vector3.Normalize(angle);
+
+            print(angle);
+
             Destroy(gameObject);
             GameObject child = Instantiate(broken_cubes[Random.Range(0, broken_cubes.Length)], transform.position, transform.rotation, gameObject.transform.parent);
             foreach (Rigidbody r in child.GetComponentsInChildren<Rigidbody>())
             {
-                r.velocity = rb.velocity;
-
+				//Net force of the total box
+				Vector3 force = rb.mass * rb.velocity;
+				
+                r.velocity = Vector3.Scale(force / r.mass, angle);
+				r.velocity *= const_slowdown;
+				
                 r.angularVelocity = rb.angularVelocity;
 
             }
-
         }
     }
 }
