@@ -9,22 +9,23 @@ public class CameraControl : MonoBehaviour
 
     public Transform lookAt;
     public Transform camTransform;
-    public float distance = 10.0f;
+    public float distance = 6.0f;
 
     private float currentX = 0.0f;
     private float currentY = 45.0f;
     private float sensitivityX = 4.0f;
     private float sensitivityY = 1.0f;
+    private float offsetX = 13;
+    private float offsetY = 15;
 
     private void Start()
     {
-        camTransform = transform;
     }
 
     private void Update()
     {
-        currentX += Input.GetAxis("HorizontalTurn");
-        currentY += Input.GetAxis("VerticalTurn");
+        currentX += Input.GetAxis("HorizontalTurn") * sensitivityX;
+        currentY += Input.GetAxis("VerticalTurn") * sensitivityY;
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
     }
@@ -36,5 +37,13 @@ public class CameraControl : MonoBehaviour
         camTransform.position = lookAt.position + rotation * dir;
         Vector3 targetView = lookAt.position;
         camTransform.LookAt(targetView);
+        //maintain player in bottom left corner
+        camTransform.Rotate(offsetX * Vector3.left, Space.Self);
+        camTransform.Rotate(offsetY * Vector3.up, Space.World);
+
+        //Quaternion xQuaternion = Quaternion.AngleAxis(offsetX, Vector3.up);
+        //Quaternion yQuaternion = Quaternion.AngleAxis(offsetY, Vector3.left);
+        //camTransform.localRotation = camTransform.localRotation * xQuaternion * yQuaternion;
+        //camTransform.Rotate(offsetX, offsetY, 0);
     }
 }
