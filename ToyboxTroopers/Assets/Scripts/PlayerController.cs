@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public Camera playerCam;
 
     private Rigidbody rb;
-	// Use this for initialization
+    // Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
 	}
