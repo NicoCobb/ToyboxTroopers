@@ -5,11 +5,8 @@ using UnityEngine;
 public class IgnoreBullets : MonoBehaviour
 {
 
-	void OnCollisionEnter( Collision collision)
+    void Start()
     {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            Physics.IgnoreCollision(collision.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
-        }
+        Physics.IgnoreLayerCollision(8, 8);
     }
 }

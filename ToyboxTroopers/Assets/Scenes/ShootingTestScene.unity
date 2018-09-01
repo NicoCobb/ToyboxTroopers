@@ -302,7 +302,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 820864819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45496836146177a448f4b0f56864e7f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e98bea222e5dd64289c6385d59743fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 54392395833403818, guid: 1439d867d9ee7b149b2846eb284b5cf3,
@@ -538,6 +538,34 @@ Prefab:
     - target: {fileID: 4415752288960318, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929179823094180, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023980199007770, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522051836285462, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915207506597008, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585734908354600, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449950210619082, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794441761348230, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e406eb3650b4849999b9a17583696a, type: 2}
