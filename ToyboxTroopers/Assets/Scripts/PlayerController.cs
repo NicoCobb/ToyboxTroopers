@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 5;
+    public Camera playerCam;
 
     private Rigidbody rb;
 	// Use this for initialization
@@ -23,7 +24,20 @@ public class PlayerController : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.AddForce(movement * speed);
+        movementManager(moveHorizontal, moveVertical);
+    }
+
+    private void movementManager(float horizontal, float vertical)
+    {
+
+        Vector3 targetMovement = new Vector3(horizontal, 0.0f, vertical);
+        targetMovement = playerCam.transform.TransformDirection(targetMovement);
+        rb.AddForce(targetMovement * speed);
+
+        //messing around with using torque instead since it's a ball
+        //i think it can potentially feel better this way but requires much more tuning
+        //Vector3 targetTorque = new Vector3(vertical, 0.0f, -horizontal);
+        //targetTorque = playerCam.transform.TransformDirection(targetTorque);
+        //rb.AddTorque(targetTorque * speed);
     }
 }
