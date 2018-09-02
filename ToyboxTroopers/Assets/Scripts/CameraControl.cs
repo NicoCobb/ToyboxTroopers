@@ -57,4 +57,3 @@ public class CameraControl : MonoBehaviour
         //camTransform.Rotate(offsetX, offsetY, 0);
     }
 }
->>>>>>> 8c47b9f961227b8332d4574ffd54420f01d990c6

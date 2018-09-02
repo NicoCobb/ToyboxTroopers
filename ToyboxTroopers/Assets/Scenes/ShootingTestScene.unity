@@ -271,6 +271,8 @@ MonoBehaviour:
   lookAt: {fileID: 888527059}
   camTransform: {fileID: 534669905}
   distance: 10
+  controllerType: 0
+  controllerNumber: 0
 --- !u!1 &820864819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: 7270f0b12eda23d4bbb1015d9373c149,
@@ -305,10 +307,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e98bea222e5dd64289c6385d59743fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 54392395833403818, guid: 1439d867d9ee7b149b2846eb284b5cf3,
+  projectile: {fileID: 54392395833403818, guid: 3b1b653de0494194c8ee5e25a56449b9,
     type: 2}
   bulletSpawn: {fileID: 820864822}
-  force: 500
+  force: 1500
   cooldown: 0.25
   accuracy: 15
 --- !u!1001 &878845169
@@ -358,6 +360,14 @@ Prefab:
     - target: {fileID: 4682662368444976, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839483597519496, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839483597519496, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}

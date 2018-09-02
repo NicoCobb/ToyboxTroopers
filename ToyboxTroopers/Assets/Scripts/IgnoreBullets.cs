@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class IgnoreBullets : MonoBehaviour
 {
-
     void Start()
     {
         Physics.IgnoreLayerCollision(8, 8);

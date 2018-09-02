@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInfo
+public class PlayerInfo : MonoBehaviour
 {
-    public int HP;
+    public int HP = 100;
     public bool hasJump = true;
-    public float speed;
+    public float speed = 1;
 }

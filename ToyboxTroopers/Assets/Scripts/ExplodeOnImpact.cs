@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExplodeOnImpact : MonoBehaviour
 {
 
-    public float deleteThis = .300f;
+    public float deleteThis = 300;
     
     void OnCollisionEnter(Collision collision)
     {

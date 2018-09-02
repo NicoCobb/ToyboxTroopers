@@ -24,9 +24,11 @@ GameObject:
   - component: {fileID: 54467679599896710}
   - component: {fileID: 135757008976388138}
   - component: {fileID: 114473428514324744}
-  m_Layer: 0
+  - component: {fileID: 114968128826303144}
+  - component: {fileID: 114248727151576022}
+  m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +39,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839483597519496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041988283, y: 0.5, z: -6.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,13 +103,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114473428514324744
+--- !u!114 &114248727151576022
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839483597519496}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11d1f40cfa6ebb4781fb22969d13756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 114968128826303144}
+--- !u!114 &114473428514324744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839483597519496}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bab96bbbd7a907746b2a13e0b410745e, type: 3}
   m_Name: 
@@ -116,6 +130,20 @@ MonoBehaviour:
   playerCam: {fileID: 0}
   controllerType: 1
   controllerNumber: 1
+--- !u!114 &114968128826303144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839483597519496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507ce275c9c2c0945acabbe79333d9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  hasJump: 1
+  speed: 1
 --- !u!135 &135757008976388138
 SphereCollider:
   m_ObjectHideFlags: 1
