@@ -5,7 +5,9 @@ using UnityEngine;
 public class GetSquished : MonoBehaviour
 {
     public PlayerInfo data;
-	
+
+    bool playSound = true;
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 8)
@@ -17,6 +19,14 @@ public class GetSquished : MonoBehaviour
         {
             //Get squished
             //Need a formula for calculating damage done
+            AudioSource[] audios = GetComponents<AudioSource>();
+            if (audios != null && playSound)
+            {
+                audios[Random.Range(0, audios.Length - 1)].Play();
+                playSound = false;
+                StartCoroutine("delay");
+            }
+
             int damage = (int) Mathf.Ceil((collision.relativeVelocity.magnitude)*collision.rigidbody.mass/5.0f);
             Debug.Log(damage);
             if (damage >= 5)
@@ -30,5 +40,13 @@ public class GetSquished : MonoBehaviour
                 //Debug.Log(transform.localScale);     
             }
         }
+    }
+
+    IEnumerator delay ()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        playSound = true;
+
     }
 }

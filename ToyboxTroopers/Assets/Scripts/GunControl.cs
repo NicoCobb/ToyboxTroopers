@@ -6,6 +6,8 @@ public class GunControl : MonoBehaviour
 {
 
     public Transform player;
+    public Transform playerCam;
+    public Transform focalPoint;
     private Transform gun;
     public Vector3 offset;
 
@@ -18,5 +20,7 @@ public class GunControl : MonoBehaviour
 	void Update ()
     {
         gun.position = player.position + offset;
-	}
+        //gun.LookAt(focalPoint);
+        //gun.Rotate(0, 90, 0);
+    }
 }

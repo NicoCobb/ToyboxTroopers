@@ -12,12 +12,20 @@ public class ProjectileShoot : MonoBehaviour
     public float cooldown = .25f;
     public int accuracy = 15;
     private float canFire;
+    AudioSource audio;
 
-	// Update is called once per frame
-	void Update ()
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
 		if (Input.GetButtonDown("Fire1") && Time.time > canFire)
         {
+            audio.pitch = Random.Range(.9f, 1.5f);
+            audio.Play();
             for (int x = 0; x < 3; ++x)
             {
                 for (int y = 0; y < 3; ++y)
