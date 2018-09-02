@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour {
     private int p1ControllerNumber = 1;
-    private int p1ControllerType = (int)InputManager.ControllerType.Keyboard; // keyboard
-    private string p1ControllerName = "Keyboard and Mouse";
+    private int p1ControllerType = (int)InputManager.ControllerType.Xbox; // keyboard
+    private string p1ControllerName = "XBox Controller";
     private int p2ControllerNumber = 1;
-    private int p2ControllerType = (int)InputManager.ControllerType.Xbox; // Xbox
-    private string p2ControllerName = "Xbox Controller";
+    private int p2ControllerType = (int)InputManager.ControllerType.Keyboard; // Xbox
+    private string p2ControllerName = "Keyboard";
 
 
     public Text p1NameText;
