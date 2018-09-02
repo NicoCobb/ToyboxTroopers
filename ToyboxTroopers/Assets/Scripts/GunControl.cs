@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunControl : MonoBehaviour
 {
 
-    public Transform lookAt;
+    public Transform player;
     private Transform gun;
     public Vector3 offset;
 
@@ -17,6 +17,6 @@ public class GunControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        gun.position = lookAt.position + offset;
+        gun.position = player.position + offset;
 	}
 }

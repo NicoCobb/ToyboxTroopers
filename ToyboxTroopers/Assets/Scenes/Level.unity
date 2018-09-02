@@ -1319,6 +1319,7 @@ MonoBehaviour:
   speed: 100
   playerCam: {fileID: 435216196}
   data: {fileID: 505053153}
+  maxAngularVel: 30
   controllerType: 0
   controllerNumber: 2
 --- !u!1001 &787187766
