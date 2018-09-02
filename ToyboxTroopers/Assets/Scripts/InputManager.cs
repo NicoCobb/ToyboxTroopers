@@ -164,7 +164,7 @@ public class InputManager {
     {
         switch (controllerType) {
             case ControllerType.Keyboard:
-                return "Mouse and Keyboard";
+                return "Keyboard";
             case ControllerType.Xbox:
                 return "XBox Controller";
             case ControllerType.Dualshock4:

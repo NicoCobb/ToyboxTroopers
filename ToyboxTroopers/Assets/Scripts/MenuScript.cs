@@ -29,6 +29,8 @@ public class MenuScript : MonoBehaviour {
             p2ControllerNumber = GameSettings.instance.p2InputManager.ControllerNumber();
             p1ControllerType = (int)GameSettings.instance.p1InputManager.GetControllerType();
             p2ControllerType = (int)GameSettings.instance.p2InputManager.GetControllerType();
+            p1ControllerName = GameSettings.instance.p1InputManager.ControllerTypeName();
+            p2ControllerName = GameSettings.instance.p2InputManager.ControllerTypeName();
         }
         SetButtonText();
     }
@@ -63,14 +65,14 @@ public class MenuScript : MonoBehaviour {
         switch (playerNum)
         {
             case 1:
-                p1ControllerNumber += 1;
-                p1ControllerNumber %= 3;
+                p1ControllerType += 1;
+                p1ControllerType %= 3;
                 GameSettings.instance.p1InputManager.InitializeInputManager(p1ControllerNumber, (InputManager.ControllerType)p1ControllerType);
                 p1ControllerName = GameSettings.instance.p1InputManager.ControllerTypeName();
                 break;
             case 2:
-                p2ControllerNumber += 1;
-                p2ControllerNumber %= 3;
+                p2ControllerType += 1;
+                p2ControllerType %= 3;
                 GameSettings.instance.p2InputManager.InitializeInputManager(p2ControllerNumber, (InputManager.ControllerType)p2ControllerType);
                 p2ControllerName = GameSettings.instance.p2InputManager.ControllerTypeName();
                 break;
@@ -85,8 +87,8 @@ public class MenuScript : MonoBehaviour {
     {
         p1NameText.text = p1ControllerName;
         p2NameText.text = p2ControllerName;
-        p1NumberText.text = "Controller Number " + p1ControllerNumber;
-        p2NumberText.text = "Controller Number " + p2ControllerNumber;
+        p1NumberText.text = "Controller #" + p1ControllerNumber;
+        p2NumberText.text = "Controller #" + p2ControllerNumber;
     }
 
     public void LoadLevel()
