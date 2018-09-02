@@ -139,6 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4415752288960318}
+  - component: {fileID: 114747927426445780}
   m_Layer: 9
   m_Name: building_small
   m_TagString: Untagged
@@ -673,6 +674,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!114 &114120488511335494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -689,6 +691,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!114 &114366231843268454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -705,6 +708,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!114 &114550096561617088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,6 +725,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!114 &114725278293184870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -737,6 +742,18 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
+--- !u!114 &114747927426445780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1929179823094180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53056a73c00549b44aae3e9ce3dd8ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114758418646509094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,3 +770,4 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}

@@ -35,6 +35,7 @@ public class BuildingRespawn : MonoBehaviour {
         print(cubes_hit + " " + cube_list.Count / 2);
         if(cubes_hit > cube_list.Count / 2)
         {
+            print("Resetting the building in " + LifeTime + " seconds.");
             ResetBuilding();
         }
     }
