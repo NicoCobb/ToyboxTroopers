@@ -45,7 +45,7 @@ public class InputManager {
         // HorizontalMovement, VerticalMovement, HorizontalLook, VerticalLook, Shoot, Jump, Back, Pause
         if (controllerType == ControllerType.Xbox)
         {
-            controllerInputStrings = new string[] { " axis 1", " axis 2", " axis 5", " axis 4", " axis 10", " button 0", " button 6", " button 7" };
+            controllerInputStrings = new string[] { " axis 1", " axis 2", " axis 4", " axis 5", " axis 10", " button 0", " button 6", " button 7" };
             for (int i = 0; i < controllerInputStrings.Length; i++)
             {
                 controllerInputStrings[i] = "joystick " + controllerNumber + controllerInputStrings[i]; // so that the correct controller is used
@@ -76,10 +76,10 @@ public class InputManager {
         }
         else if (controllerType == ControllerType.Xbox)
         {
-            UpdateControllerValue(ControllerAxis.HorizontalMovement, Input.GetAxisRaw(controllerInputStrings[0]));
-            UpdateControllerValue(ControllerAxis.VerticalMovement, -Input.GetAxisRaw(controllerInputStrings[1]));
-            UpdateControllerValue(ControllerAxis.HorizontalLook, Input.GetAxisRaw(controllerInputStrings[2]));
-            UpdateControllerValue(ControllerAxis.VerticalLook, -Input.GetAxisRaw(controllerInputStrings[3]));
+            UpdateControllerValue(ControllerAxis.HorizontalMovement, Input.GetAxis(controllerInputStrings[0]));
+            UpdateControllerValue(ControllerAxis.VerticalMovement, -Input.GetAxis(controllerInputStrings[1]));
+            UpdateControllerValue(ControllerAxis.HorizontalLook, Input.GetAxis(controllerInputStrings[2]));
+            UpdateControllerValue(ControllerAxis.VerticalLook, -Input.GetAxis(controllerInputStrings[3]));
             UpdateControllerValue(ControllerAxis.Shoot, Input.GetAxisRaw(controllerInputStrings[4]) > 0.05f ? 1 : 0);
             UpdateControllerValue(ControllerAxis.Jump, Input.GetKey(controllerInputStrings[5]) ? 1 : 0);
             UpdateControllerValue(ControllerAxis.Back, Input.GetKey(controllerInputStrings[6]) ? 1 : 0);
@@ -209,3 +209,4 @@ public class InputManager {
         HorizontalMovement, VerticalMovement, HorizontalLook, VerticalLook, Shoot, Jump, Back, Pause
     }
 }
+>>>>>>> 8c47b9f961227b8332d4574ffd54420f01d990c6

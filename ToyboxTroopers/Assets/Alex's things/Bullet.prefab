@@ -27,13 +27,17 @@ GameObject:
   - component: {fileID: 114644581610504800}
   m_Layer: 8
   m_Name: Bullet
+<<<<<<< HEAD
   m_TagString: Undefined
+=======
+  m_TagString: bullet
+>>>>>>> 8c47b9f961227b8332d4574ffd54420f01d990c6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4569468906326500
-Transform:
+Transform
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
