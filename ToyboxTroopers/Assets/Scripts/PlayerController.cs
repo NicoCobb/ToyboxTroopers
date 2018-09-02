@@ -8,21 +8,27 @@ public class PlayerController : MonoBehaviour {
     public Camera playerCam;
 
     private Rigidbody rb;
+    [SerializeField]
+    private InputManager.ControllerType controllerType;
+    [SerializeField]
+    private int controllerNumber = 0;
+    InputManager inputManager;
     // Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
+        inputManager = new InputManager(controllerNumber, controllerType);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        inputManager.Update();
 	}
 
     //FixedUpdate is called before physics calculations
     private void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = inputManager.GetAxis(InputManager.ControllerAxis.HorizontalMovement);
+        float moveVertical = inputManager.GetAxis(InputManager.ControllerAxis.VerticalMovement);
 
         movementManager(moveHorizontal, moveVertical);
     }

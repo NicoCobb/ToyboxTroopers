@@ -18,14 +18,24 @@ public class CameraControl : MonoBehaviour
     private float offsetX = 13;
     private float offsetY = 15;
 
+    [SerializeField]
+    private InputManager.ControllerType controllerType;
+    [SerializeField]
+    private int controllerNumber = 0;
+    InputManager inputManager;
+
     private void Start()
     {
+        inputManager = new InputManager(controllerNumber, controllerType);
     }
 
     private void Update()
     {
-        currentX += Input.GetAxis("HorizontalTurn") * sensitivityX;
-        currentY += Input.GetAxis("VerticalTurn") * sensitivityY;
+        inputManager.Update();
+        currentX += inputManager.GetAxis(InputManager.ControllerAxis.HorizontalLook) * sensitivityX;
+        currentY += inputManager.GetAxis(InputManager.ControllerAxis.VerticalLook) * sensitivityY;
+        //currentX += Input.GetAxis("HorizontalTurn") * sensitivityX;
+        //currentY += Input.GetAxis("VerticalTurn") * sensitivityY;
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
     }
