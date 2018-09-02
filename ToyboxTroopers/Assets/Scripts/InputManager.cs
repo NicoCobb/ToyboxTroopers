@@ -164,7 +164,7 @@ public class InputManager {
     {
         switch (controllerType) {
             case ControllerType.Keyboard:
-                return "Mouse and Keyboard";
+                return "Keyboard";
             case ControllerType.Xbox:
                 return "XBox Controller";
             case ControllerType.Dualshock4:
@@ -172,6 +172,11 @@ public class InputManager {
             default:
                 return "This is not a valid controller type. Congratulations you broke the game";
         }
+    }
+
+    public ControllerType GetControllerType()
+    {
+        return controllerType;
     }
 
     public string AxisName(ControllerAxis axis)
