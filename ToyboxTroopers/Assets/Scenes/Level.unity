@@ -1841,6 +1841,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114968128826303144, guid: b49a2a54694556e4ab155d22e2fa85f2,
+        type: 2}
+      propertyPath: playerNum
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114473428514324744, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}

@@ -8,4 +8,5 @@ public class PlayerInfo : MonoBehaviour
     public bool hasJump = true;
     public bool hasDoubleJump = false;
     public float speed = 1;
+    public int playerNum = 1;
 }

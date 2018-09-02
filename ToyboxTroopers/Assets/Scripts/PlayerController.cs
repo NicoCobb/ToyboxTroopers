@@ -23,6 +23,16 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         rb.maxAngularVelocity = maxAngularVel;
         inputManager = new InputManager(controllerNumber, controllerType);
+        if (GameSettings.instance != null)
+        {
+            if (data.playerNum == 1)
+            {
+                inputManager = GameSettings.instance.p1InputManager;
+            } else
+            {
+                inputManager = GameSettings.instance.p2InputManager;
+            }
+        }
 	}
 	
 	// Update is called once per frame
