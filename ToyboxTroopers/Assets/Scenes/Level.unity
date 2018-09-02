@@ -1628,7 +1628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'winner
+  m_Text: '
 
 '
 --- !u!222 &448874078
@@ -3095,6 +3095,7 @@ GameObject:
   - component: {fileID: 974507870}
   - component: {fileID: 974507869}
   - component: {fileID: 974507868}
+  - component: {fileID: 974507871}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3147,6 +3148,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974507871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974507867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4651eb7567a7443478345b4762f7eca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1: {fileID: 787187767}
+  p2: {fileID: 505053153}
+  p1Txt: {fileID: 448874077}
+  p2Txt: {fileID: 2013750462}
 --- !u!1 &987190580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1100146722}
+  - component: {fileID: 1100146723}
   m_Layer: 9
   m_Name: Roof_support (2)
   m_TagString: Untagged
@@ -4213,6 +4230,17 @@ Transform:
   m_Father: {fileID: 1670258516}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1100146723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100146721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53056a73c00549b44aae3e9ce3dd8ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1153430218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4850,6 +4878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256951083}
+  - component: {fileID: 1256951084}
   m_Layer: 9
   m_Name: Roof_support
   m_TagString: Untagged
@@ -4875,6 +4904,17 @@ Transform:
   m_Father: {fileID: 1670258516}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256951084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256951082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53056a73c00549b44aae3e9ce3dd8ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262639548
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,6 +6600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757333397}
+  - component: {fileID: 1757333398}
   m_Layer: 9
   m_Name: Roof_support (1)
   m_TagString: Untagged
@@ -6585,6 +6626,17 @@ Transform:
   m_Father: {fileID: 1670258516}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757333398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757333396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53056a73c00549b44aae3e9ce3dd8ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1768312433
 Prefab:
   m_ObjectHideFlags: 0
@@ -6895,6 +6947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1801203463}
+  - component: {fileID: 1801203464}
   m_Layer: 9
   m_Name: Roof_support (3)
   m_TagString: Untagged
@@ -6920,6 +6973,17 @@ Transform:
   m_Father: {fileID: 1670258516}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801203464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801203462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53056a73c00549b44aae3e9ce3dd8ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1805074378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4415752288960318, guid: 81e406eb3650b4849999b9a17583696a,
@@ -7615,7 +7679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'winner
+  m_Text: '
 
 '
 --- !u!222 &2013750463
