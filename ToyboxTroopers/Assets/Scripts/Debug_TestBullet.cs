@@ -5,7 +5,7 @@ using UnityEngine;
 //p to shoot the bullet it dies after hitting anything for debug
 
 public class Debug_TestBullet : MonoBehaviour {
-
+    
 	// Use this for initialization
 	void Start ()
     {
@@ -19,11 +19,16 @@ public class Debug_TestBullet : MonoBehaviour {
         {
             gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 7500);
         }
-        
-	}
+        if (Input.GetKeyDown(KeyCode.O) && gameObject.GetComponent<Rigidbody>().velocity == Vector3.zero)
+        {
+            gameObject.SetActive(true);
+            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
+
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

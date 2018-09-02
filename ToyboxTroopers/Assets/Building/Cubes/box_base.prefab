@@ -129,3 +129,4 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
