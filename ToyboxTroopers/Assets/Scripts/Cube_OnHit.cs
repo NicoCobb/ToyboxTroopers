@@ -7,7 +7,7 @@ public class Cube_OnHit : MonoBehaviour {
     public GameObject[] broken_cubes;
     
     static private int breaking_point = 150;
-	static private float const_slowdown = 0.8f;
+	static private float break_multi = 1.25f;
 
     private Rigidbody rb;
 	// Use this for initialization
@@ -27,13 +27,14 @@ public class Cube_OnHit : MonoBehaviour {
             Vector3 angle = rb.velocity;
             if (collision.gameObject.tag == "bullet")
             {
-                angle += collision.contacts[0].normal;
+                angle = collision.contacts[0].normal;
                 angle /= 2;
+                print(rb.velocity + " " + collision.contacts[0].normal + " " + angle);
+                
             }
             else
                 angle = Vector3.one;
-            print(rb.velocity + " " + collision.contacts[0].normal + " " + angle);
-            angle = Vector3.Normalize(angle);
+            angle = -Vector3.Normalize(angle);
 
             print(angle);
 
@@ -43,9 +44,13 @@ public class Cube_OnHit : MonoBehaviour {
             {
 				//Net force of the total box
 				Vector3 force = rb.mass * rb.velocity;
-				
+
+                for (int i = 0; i < 3; i++)
+                    force[i] = Mathf.Abs(force[i]);
+
+
                 r.velocity = Vector3.Scale(force / r.mass, angle);
-				r.velocity *= const_slowdown;
+				r.velocity *= break_multi;
 				
                 r.angularVelocity = rb.angularVelocity;
 

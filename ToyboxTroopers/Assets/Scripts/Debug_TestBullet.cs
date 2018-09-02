@@ -17,7 +17,7 @@ public class Debug_TestBullet : MonoBehaviour {
 		
         if(Input.GetKeyDown(KeyCode.P) && gameObject.GetComponent<Rigidbody>().velocity==Vector3.zero)
         {
-            gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 4500);
+            gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 7500);
         }
         
 	}
