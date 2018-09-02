@@ -16,21 +16,30 @@ public class ProjectileShoot : MonoBehaviour
 
     //input manager
     [SerializeField]
-    private InputManager.ControllerType controllerType;
-    [SerializeField]
-    private int controllerNumber = 0;
+    private PlayerInfo data;
     InputManager inputManager;
 
     private void Start()
     {
-        inputManager = new InputManager(controllerNumber, controllerType);
+        if (GameSettings.instance != null)
+        {
+            Debug.Log("Trying to set camera control");
+            if (data.playerNum == 1)
+            {
+                inputManager = GameSettings.instance.p1InputManager;
+            }
+            else
+            {
+                inputManager = GameSettings.instance.p2InputManager;
+            }
+        }
         audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update ()
     {
-        inputManager.Update();
+        //inputManager.Update(); // this is done in playercontroller since they share an inputmanager
         bool fire = inputManager.GetAxisPressed(InputManager.ControllerAxis.Shoot);
         if (fire && Time.time > canFire)
         {

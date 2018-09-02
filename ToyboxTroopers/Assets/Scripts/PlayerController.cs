@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour {
                 inputManager = GameSettings.instance.p2InputManager;
             }
         }
+
+        Cursor.lockState = CursorLockMode.Locked; // sticking this here because sorry world...
+        Cursor.visible = false;
 	}
 	
 	// Update is called once per frame

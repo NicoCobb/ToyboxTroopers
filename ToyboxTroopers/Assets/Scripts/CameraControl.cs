@@ -23,15 +23,28 @@ public class CameraControl : MonoBehaviour
     [SerializeField]
     private int controllerNumber = 0;
     InputManager inputManager;
+    [SerializeField]
+    private PlayerInfo data;
 
     private void Start()
     {
-        inputManager = new InputManager(controllerNumber, controllerType);
+        if (GameSettings.instance != null)
+        {
+            Debug.Log("Trying to set camera control");
+            if (data.playerNum == 1)
+            {
+                inputManager = GameSettings.instance.p1InputManager;
+            }
+            else
+            {
+                inputManager = GameSettings.instance.p2InputManager;
+            }
+        }
     }
 
     private void Update()
     {
-        inputManager.Update();
+        // inputManager.Update(); // this is done by the playerController since they share an inputmanager
         currentX += inputManager.GetAxis(InputManager.ControllerAxis.HorizontalLook) * sensitivityX;
         currentY += inputManager.GetAxis(InputManager.ControllerAxis.VerticalLook) * sensitivityY;
         //currentX += Input.GetAxis("HorizontalTurn") * sensitivityX;

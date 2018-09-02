@@ -1690,6 +1690,7 @@ MonoBehaviour:
   distance: 8
   controllerType: 1
   controllerNumber: 1
+  data: {fileID: 787187767}
 --- !u!114 &425572391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1802,6 +1803,7 @@ MonoBehaviour:
   distance: 8
   controllerType: 0
   controllerNumber: 2
+  data: {fileID: 505053153}
 --- !u!114 &435216199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,6 +1816,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 2eb378703c9ea1540a4aad454857d371, type: 2}
+--- !u!114 &435216200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435216194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909d9f839844ae242a1dff18b7fbd043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunContainer: {fileID: 78349502}
+  controllerType: 0
+  controllerNumber: 2
 --- !u!1 &448874075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,20 +1907,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 448874075}
   m_CullTransparentMesh: 0
---- !u!114 &435216200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435216194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 909d9f839844ae242a1dff18b7fbd043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunContainer: {fileID: 78349502}
-  controllerType: 0
-  controllerNumber: 2
 --- !u!1 &489198431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,6 +2802,11 @@ Prefab:
       propertyPath: controllerNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114149706242701004, guid: fdc4936a6b0449248b1b9223ce0162f4,
+        type: 2}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 787187767}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc4936a6b0449248b1b9223ce0162f4, type: 2}
   m_IsPrefabAsset: 0
@@ -6177,6 +6184,11 @@ Prefab:
       propertyPath: controllerNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114149706242701004, guid: fdc4936a6b0449248b1b9223ce0162f4,
+        type: 2}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 505053153}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc4936a6b0449248b1b9223ce0162f4, type: 2}
   m_IsPrefabAsset: 0
