@@ -6,5 +6,6 @@ public class PlayerInfo : MonoBehaviour
 {
     public int HP = 100;
     public bool hasJump = true;
+    public bool hasDoubleJump = false;
     public float speed = 1;
 }
