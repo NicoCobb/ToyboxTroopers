@@ -174,6 +174,11 @@ public class InputManager {
         }
     }
 
+    public ControllerType GetControllerType()
+    {
+        return controllerType;
+    }
+
     public string AxisName(ControllerAxis axis)
     {
         switch (axis)
