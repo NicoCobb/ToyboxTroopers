@@ -15,8 +15,8 @@ public class CameraControl : MonoBehaviour
     private float currentY = 45.0f;
     private float sensitivityX = 4.0f;
     private float sensitivityY = 1.0f;
-    private float offsetX = 13;
-    private float offsetY = 15;
+    private float offsetX = 15;
+    private float offsetY = 0;
 
     [SerializeField]
     private InputManager.ControllerType controllerType;

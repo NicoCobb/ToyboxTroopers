@@ -74,7 +74,7 @@ public class InputManager {
             UpdateControllerValue(ControllerAxis.Back, Input.GetKey(KeyCode.Escape) ? 1 : 0);
             UpdateControllerValue(ControllerAxis.Pause, Input.GetKey(KeyCode.P) ? 1 : 0);
         }
-        else if (controllerType == ControllerType.Xbox)
+        else if (controllerType == ControllerType.Xbox) //this boi right here is broke somehow. don't know about dualshock
         {
             UpdateControllerValue(ControllerAxis.HorizontalMovement, Input.GetAxis(controllerInputStrings[0]));
             UpdateControllerValue(ControllerAxis.VerticalMovement, -Input.GetAxis(controllerInputStrings[1]));
