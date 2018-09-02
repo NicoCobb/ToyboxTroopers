@@ -437,6 +437,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &51286283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &489198435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1485,6 +1487,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &518805410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1697,6 +1700,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &555659436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1822,6 +1826,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &596446983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1947,6 +1952,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &634343087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2185,6 +2191,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &842526840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2397,6 +2404,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &908634570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2609,6 +2617,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &987190584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3514,6 +3523,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1097624529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3630,7 +3640,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4daccbcfa4803a4469cb4e3beb019cfa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c01d08c77ac6a694594972fd4bdc2ab3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -3884,6 +3894,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1182508379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4212,6 +4223,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1262639552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5120,6 +5132,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1504779624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5245,6 +5258,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1524153437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6356,6 +6370,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &1869112312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6620,6 +6635,7 @@ MonoBehaviour:
   - {fileID: 1551485219435066, guid: aaddd82d0e3532e4bbccfc469b703c7a, type: 2}
   - {fileID: 1271198137376128, guid: c38bbeb73cb7f7f42bcbb83ea2483281, type: 2}
   - {fileID: 1659487906477954, guid: 827fd718c3a1acb4eb5613609fc104f6, type: 2}
+  building: {fileID: 0}
 --- !u!65 &2006685518
 BoxCollider:
   m_ObjectHideFlags: 0
