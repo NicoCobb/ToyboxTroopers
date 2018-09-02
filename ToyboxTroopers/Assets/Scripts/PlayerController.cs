@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -41,6 +42,10 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         inputManager.Update();
+        if (inputManager.GetAxisDown(InputManager.ControllerAxis.Back))
+        {
+            SceneManager.LoadScene("Menu");
+        }
 	}
 
     //FixedUpdate is called before physics calculations
