@@ -35,6 +35,19 @@ public class MenuScript : MonoBehaviour {
         SetButtonText();
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+    }
+
     public void ToggleControllerNumber(int playerNum)
     {
         switch (playerNum)
