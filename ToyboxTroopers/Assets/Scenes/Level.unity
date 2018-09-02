@@ -702,6 +702,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4682662368444976, guid: b49a2a54694556e4ab155d22e2fa85f2,
     type: 2}
   m_PrefabInternal: {fileID: 505053151}
+--- !u!114 &505053153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114968128826303144, guid: b49a2a54694556e4ab155d22e2fa85f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 505053151}
+  m_Script: {fileID: 11500000, guid: 507ce275c9c2c0945acabbe79333d9eb, type: 3}
 --- !u!1 &518805406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   playerCam: {fileID: 435216196}
+  data: {fileID: 505053153}
   controllerType: 0
   controllerNumber: 2
 --- !u!1001 &787187766
@@ -1381,9 +1388,25 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114473428514324744, guid: b49a2a54694556e4ab155d22e2fa85f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473428514324744, guid: b49a2a54694556e4ab155d22e2fa85f2,
+        type: 2}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 787187767}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b49a2a54694556e4ab155d22e2fa85f2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &787187767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114968128826303144, guid: b49a2a54694556e4ab155d22e2fa85f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 787187766}
+  m_Script: {fileID: 11500000, guid: 507ce275c9c2c0945acabbe79333d9eb, type: 3}
 --- !u!1 &842526836
 GameObject:
   m_ObjectHideFlags: 0
