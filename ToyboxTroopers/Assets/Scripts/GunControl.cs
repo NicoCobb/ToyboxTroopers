@@ -8,19 +8,16 @@ public class GunControl : MonoBehaviour
     public Transform player;
     public Transform playerCam;
     public Transform focalPoint;
-    private Transform gun;
     public Vector3 offset;
 
     void Start()
     {
-        gun = transform;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        gun.position = player.position + offset;
-        //gun.LookAt(focalPoint);
-        //gun.Rotate(0, 90, 0);
+        transform.position = player.position + offset;
+        //transform.LookAt(focalPoint);
     }
 }

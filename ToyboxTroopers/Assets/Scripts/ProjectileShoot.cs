@@ -14,15 +14,25 @@ public class ProjectileShoot : MonoBehaviour
     private float canFire;
     AudioSource audio;
 
+    //input manager
+    [SerializeField]
+    private InputManager.ControllerType controllerType;
+    [SerializeField]
+    private int controllerNumber = 0;
+    InputManager inputManager;
+
     private void Start()
     {
+        inputManager = new InputManager(controllerNumber, controllerType);
         audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update ()
     {
-		if (Input.GetButtonDown("Fire1") && Time.time > canFire)
+        inputManager.Update();
+        bool fire = inputManager.GetAxisPressed(InputManager.ControllerAxis.Shoot);
+        if (fire && Time.time > canFire)
         {
             audio.pitch = Random.Range(.9f, 1.5f);
             audio.Play();
