@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Bullet
-  - Undefined
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,9 +14,9 @@ TagManager:
   - 
   - 
   - Bullet
-  - Buildings
-  - 
-  - 
+  - Building
+  - Player
+  - Wall
   - 
   - 
   - 
@@ -42,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Bullet
-    uniqueID: 1545806341
     locked: 0
